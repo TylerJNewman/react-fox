@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-fox/static/css/main.c686c684.chunk.css",
+    "main.js": "/react-fox/static/js/main.0c7f9ca7.chunk.js",
+    "main.js.map": "/react-fox/static/js/main.0c7f9ca7.chunk.js.map",
+    "runtime-main.js": "/react-fox/static/js/runtime-main.e705fe30.js",
+    "runtime-main.js.map": "/react-fox/static/js/runtime-main.e705fe30.js.map",
+    "static/js/2.1465cecb.chunk.js": "/react-fox/static/js/2.1465cecb.chunk.js",
+    "static/js/2.1465cecb.chunk.js.map": "/react-fox/static/js/2.1465cecb.chunk.js.map",
+    "static/js/3.ab061625.chunk.js": "/react-fox/static/js/3.ab061625.chunk.js",
+    "static/js/3.ab061625.chunk.js.map": "/react-fox/static/js/3.ab061625.chunk.js.map",
+    "index.html": "/react-fox/index.html",
+    "static/css/main.c686c684.chunk.css.map": "/react-fox/static/css/main.c686c684.chunk.css.map",
+    "static/js/2.1465cecb.chunk.js.LICENSE.txt": "/react-fox/static/js/2.1465cecb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e705fe30.js",
+    "static/js/2.1465cecb.chunk.js",
+    "static/css/main.c686c684.chunk.css",
+    "static/js/main.0c7f9ca7.chunk.js"
+  ]
+}
