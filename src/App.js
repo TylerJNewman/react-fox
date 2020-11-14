@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from "react";
+import {Canvas} from "react-three-fiber";
+// import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import {RecoilRoot} from "recoil";
+import "./styles.css";
+import Loading from "./Loading";
+import Terrain from "./Terrain";
+import Ship from "./Ship";
+// import CameraControls from "./CameraControls";
+import Target from "./Target";
+import Enemies from "./Enemies";
+import LaserController from "./LaserController";
+import Lasers from "./Lasers";
+import GameTimer from "./GameTimer";
 
-function App() {
+// Extend will make OrbitControls available as a JSX element called orbitControls for us to use.
+// extend({OrbitControls});
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Canvas style={{background: "black"}}>
+      <RecoilRoot>
+        <directionalLight intensity={1} />
+        <ambientLight intensity={0.1} />
+        <Terrain />
+        <Suspense fallback={<Loading />}>
+          <Ship />
+        </Suspense>
+        <Target />
+        <Enemies />
+        <Lasers />
+        <LaserController />
+        <GameTimer />
+      </RecoilRoot>
+    </Canvas>
   );
 }
-
-export default App;
